@@ -1,3 +1,3 @@
 export default function Home() {
-  return <main>Next Tailwind Template</main>;
+  return <div>Next Tailwind Template</div>;
 }

@@ -1,6 +1,10 @@
 module.exports = {
-  extends: ["next/core-web-vitals", "plugin:prettier/recommended"],
-  plugins: ["@typescript-eslint"],
+  extends: [
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended",
+  ],
+  plugins: ["@typescript-eslint", "tailwindcss"],
   rules: {
     "no-var": "error",
     "no-console": "warn",
