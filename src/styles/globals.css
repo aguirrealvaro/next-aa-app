@@ -3,16 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-primary: "neutral-50";
+  --bg-secondary: "white";
+
+  --border-primary: "rgba(0, 0, 0, 0.1)";
+  --hover-primary: "rgba(0, 0, 0, 0.05)";
+
+  --text-heading: "black";
+  --text-primary: "neutral-900";
+  --text-secondary: "neutral-600";
+
+  --disabled-primary: "neutral-300";
+  --disabled-secondary: "neutral-500";
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --bg-primary: "neutral-900";
+    --bg-secondary: "neutral-800";
+
+    --border-primary: "rgba(255, 255, 255, 0.1)";
+    --hover-primary: "rgba(255, 255, 255, 0.05)";
+
+    --text-heading: "white";
+    --text-primary: "neutral-100";
+    --text-secondary: "neutral-400";
+
+    --disabled-primary: "neutral-700";
+    --disabled-secondary: "neutral-500";
   }
 }
 
