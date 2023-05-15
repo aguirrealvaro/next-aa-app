@@ -18,7 +18,7 @@ type RootLayoutProps = {
 const RootLayout: FunctionComponent<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={cn("bg-neutral-50 text-neutral-900 antialiased", inter.className)}>
+      <body className={cn("bg-bg-primary text-text-primary antialiased", inter.className)}>
         <div className="flex h-screen flex-col">
           <header>Header</header>
           <main className="flex-1">{children}</main>

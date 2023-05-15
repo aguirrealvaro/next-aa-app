@@ -3,34 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --bg-primary: "neutral-50";
-  --bg-secondary: "white";
+  --bg-primary: #f5f5f5; /* neutral-50 */
+  --bg-secondary: #ffffff; /* white */
 
-  --border-primary: "rgba(0, 0, 0, 0.1)";
-  --hover-primary: "rgba(0, 0, 0, 0.05)";
+  --border-primary: rgba(0, 0, 0, 0.1);
+  --hover-primary: rgba(0, 0, 0, 0.05);
 
-  --text-heading: "black";
-  --text-primary: "neutral-900";
-  --text-secondary: "neutral-600";
+  --text-heading: #000000; /* black */
+  --text-primary: #171717; /* neutral-900 */
+  --text-secondary: #525252; /* neutral-600 */
 
-  --disabled-primary: "neutral-300";
-  --disabled-secondary: "neutral-500";
+  --disabled-primary: #d4d4d4; /* neutral-300 */
+  --disabled-secondary: #737373; /* neutral-500 */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-primary: "neutral-900";
-    --bg-secondary: "neutral-800";
+    --bg-primary: #171717; /* neutral-900 */
+    --bg-secondary: #262626; /* neutral-800 */
 
-    --border-primary: "rgba(255, 255, 255, 0.1)";
-    --hover-primary: "rgba(255, 255, 255, 0.05)";
+    --border-primary: rgba(255, 255, 255, 0.1);
+    --hover-primary: rgba(255, 255, 255, 0.05);
 
-    --text-heading: "white";
-    --text-primary: "neutral-100";
-    --text-secondary: "neutral-400";
+    --text-heading: #ffffff; /* white */
+    --text-primary: #f5f5f5; /* neutral-100 */
+    --text-secondary: #a3a3a3; /* neutral-400 */
 
-    --disabled-primary: "neutral-700";
-    --disabled-secondary: "neutral-500";
+    --disabled-primary: #404040; /* neutral-700 */
+    --disabled-secondary: #737373; /* neutral-500 */
   }
 }
 
