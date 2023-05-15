@@ -6,5 +6,12 @@ export const ThemeToggle: FunctionComponent = () => {
 
   const handleToggle = () => setTheme(theme === "light" ? "dark" : "light");
 
-  return <button onClick={handleToggle}>Toggle theme</button>;
+  return (
+    <button
+      onClick={handleToggle}
+      className="bg-sky-500 px-4 py-2 text-white dark:text-black rounded"
+    >
+      Toggle theme: {theme === "light" ? "Light" : "Dark"}
+    </button>
+  );
 };
