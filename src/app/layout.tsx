@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 import { FunctionComponent, ReactNode } from "react";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { cn } from "@/utils";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,9 +18,9 @@ type RootLayoutProps = {
 const RootLayout: FunctionComponent<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={cn("bg-neutral-50 text-neutral-900 antialiased", inter.className)}>
         <div className="flex h-screen flex-col">
-          <header className="wrapper">Header</header>
+          <header>Header</header>
           <main className="flex-1">{children}</main>
           <footer>Footer</footer>
         </div>
