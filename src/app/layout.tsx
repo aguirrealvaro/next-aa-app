@@ -1,4 +1,5 @@
 import "@/styles/globals.css";
+import { FunctionComponent, ReactNode } from "react";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -9,7 +10,11 @@ export const metadata: Metadata = {
   description: "Description",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+type RootLayoutProps = {
+  children: ReactNode;
+};
+
+const RootLayout: FunctionComponent<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -21,4 +26,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </body>
     </html>
   );
-}
+};
+
+export default RootLayout;
