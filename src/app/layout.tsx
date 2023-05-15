@@ -19,7 +19,7 @@ const RootLayout: FunctionComponent<RootLayoutProps> = ({ children }) => {
     <html lang="en">
       <body className={inter.className}>
         <div className="flex h-screen flex-col">
-          <header>Header</header>
+          <header className="wrapper">Header</header>
           <main className="flex-1">{children}</main>
           <footer>Footer</footer>
         </div>
