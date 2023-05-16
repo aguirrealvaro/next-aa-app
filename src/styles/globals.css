@@ -34,6 +34,14 @@
   }
 }
 
+@layer base {
+  *,
+  ::before,
+  ::after {
+    @apply border-border-primary;
+  }
+}
+
 @layer components {
   .wrapper {
     @apply mx-auto w-4/5 max-w-6xl;
