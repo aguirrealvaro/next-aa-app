@@ -7,6 +7,13 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      xl: { max: "1440px" },
+      lg: { max: "1280px" },
+      md: { max: "992px" },
+      sm: { max: "768px" },
+      xs: { max: "480px" },
+    },
     extend: {
       colors: {
         "bg-primary": "var(--bg-primary)",
