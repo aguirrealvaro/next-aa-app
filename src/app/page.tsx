@@ -7,7 +7,6 @@ export default function Home() {
     <div>
       <h1>Next Tailwind Template</h1>
       <ThemeToggle />
-      <div className="xs:hidden">hola</div>
     </div>
   );
 }
