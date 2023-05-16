@@ -9,7 +9,7 @@ export const ThemeToggle: FunctionComponent = () => {
   return (
     <button
       onClick={handleToggle}
-      className="bg-sky-500 px-4 py-2 text-white dark:text-black rounded"
+      className="rounded bg-sky-500 px-4 py-2 text-white dark:text-black"
     >
       Toggle theme
     </button>

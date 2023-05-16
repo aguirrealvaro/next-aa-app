@@ -36,6 +36,6 @@
 
 @layer components {
   .wrapper {
-    @apply max-w-6xl w-4/5 mx-auto;
+    @apply mx-auto w-4/5 max-w-6xl;
   }
 }
