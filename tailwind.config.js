@@ -29,6 +29,10 @@ module.exports = {
         "disabled-primary": "var(--disabled-primary)",
         "disabled-secondary": "var(--disabled-secondary)",
       },
+      fontFamily: {
+        heading: "Arial",
+        body: "Arial",
+      },
     },
   },
   plugins: [],
