@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import { useTheme } from "next-themes";
+import { cn } from "@/utils";
 
 export const ThemeToggle: FunctionComponent = () => {
   const { theme, setTheme } = useTheme();
@@ -9,7 +10,10 @@ export const ThemeToggle: FunctionComponent = () => {
   return (
     <button
       onClick={handleToggle}
-      className="rounded bg-sky-500 px-4 py-2 text-white dark:text-black"
+      className={cn(
+        "rounded bg-sky-500 px-4 py-2 text-white hover:bg-sky-600",
+        "dark:text-black dark:hover:bg-sky-400"
+      )}
     >
       Toggle theme
     </button>
