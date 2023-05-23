@@ -20,7 +20,7 @@ module.exports = {
         "bg-secondary": "var(--bg-secondary)",
 
         "border-primary": "var(--border-primary)",
-        "hover-secondary": "var(--hover-secondary)",
+        "hover-primary": "var(--hover-primary)",
 
         "text-heading": "var(--text-heading)",
         "text-primary": "var(--text-primary)",
