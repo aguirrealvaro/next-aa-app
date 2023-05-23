@@ -1,6 +1,6 @@
 import { FunctionComponent } from "react";
 import { useTheme } from "next-themes";
-import { cn } from "@/utils";
+import { cn } from "@/utils/cn";
 
 export const ThemeToggle: FunctionComponent = () => {
   const { theme, setTheme } = useTheme();
