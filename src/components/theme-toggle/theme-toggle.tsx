@@ -1,3 +1,5 @@
+"use client";
+
 import { FunctionComponent } from "react";
 import { useTheme } from "next-themes";
 import { cn } from "@/utils/cn";
