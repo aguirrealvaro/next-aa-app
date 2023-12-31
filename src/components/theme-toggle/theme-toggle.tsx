@@ -1,13 +1,14 @@
 "use client";
 
-import { FunctionComponent } from "react";
 import { useTheme } from "next-themes";
 import { cn } from "@/utils/cn";
 
-export const ThemeToggle: FunctionComponent = () => {
+export const ThemeToggle = () => {
   const { theme, setTheme } = useTheme();
 
-  const handleToggle = () => setTheme(theme === "light" ? "dark" : "light");
+  const handleToggle = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
 
   return (
     <button
