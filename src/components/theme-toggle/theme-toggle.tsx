@@ -14,8 +14,8 @@ export const ThemeToggle = () => {
     <button
       onClick={handleToggle}
       className={cn(
-        "rounded bg-sky-500 px-4 py-2 text-white hover:bg-sky-600",
-        "dark:text-black dark:hover:bg-sky-400"
+        "rounded bg-sky-500 px-4 py-2 text-white hover:bg-blue-600",
+        "dark:text-black dark:hover:bg-blue-400"
       )}
     >
       Toggle theme

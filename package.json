@@ -3,10 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
     "dev": "next dev",
-    "start-dev": "next dev",
-    "start-prod": "next start",
+    "build": "next build",
+    "start": "next start",
     "format": "prettier --write .",
     "lint": "next lint",
     "lint-fix": "next lint --fix",
