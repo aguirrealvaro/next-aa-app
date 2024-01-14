@@ -1,9 +1,10 @@
 import "@/styles/globals.css";
 import { ReactNode } from "react";
 import { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { ErrorBoundary } from "@/components";
 import { ThemeProvider } from "@/providers";
 import { cn } from "@/utils/cn";
-import { inter } from "@/utils/fonts";
 
 export const metadata: Metadata = {
   title: "Next Tailwind Template",
@@ -14,6 +15,11 @@ type RootLayoutProps = {
   children: ReactNode;
 };
 
+export const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -23,13 +29,15 @@ const RootLayout = ({ children }: RootLayoutProps) => {
           `${inter.variable} font-body`
         )}
       >
-        <ThemeProvider>
-          <div className="flex min-h-screen flex-col">
-            <header>Header</header>
-            <main className="flex-1">{children}</main>
-            <footer>Footer</footer>
-          </div>
-        </ThemeProvider>
+        <ErrorBoundary>
+          <ThemeProvider>
+            <div className="flex min-h-screen flex-col">
+              <header>Header</header>
+              <main className="flex-1">{children}</main>
+              <footer>Footer</footer>
+            </div>
+          </ThemeProvider>
+        </ErrorBoundary>
       </body>
     </html>
   );
