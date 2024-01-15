@@ -15,7 +15,7 @@ type RootLayoutProps = {
   children: ReactNode;
 };
 
-export const inter = Inter({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
