@@ -2,6 +2,7 @@
 
 import React, { ReactNode } from "react";
 import { ErrorBoundary as ErrorBoundaryComponent } from "react-error-boundary";
+import { Wrapper } from "@/components";
 
 type ErrorFallbackProps = {
   error: Error;
@@ -9,9 +10,13 @@ type ErrorFallbackProps = {
 
 const ErrorFallback = ({ error }: ErrorFallbackProps) => {
   return (
-    <div role="alert">
-      <p>Something went wrong:</p>
-      <pre className="text-red-500">{error.message}</pre>
+    <div className="mt-8">
+      <Wrapper>
+        <div role="alert">
+          <p>Something went wrong:</p>
+          <pre className="text-red-500">{error.message}</pre>
+        </div>
+      </Wrapper>
     </div>
   );
 };
