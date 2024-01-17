@@ -3,8 +3,8 @@ import { ReactNode } from "react";
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ErrorBoundary } from "@/components";
+import { cn } from "@/lib/cn";
 import { ThemeProvider } from "@/providers";
-import { cn } from "@/utils/cn";
 
 export const metadata: Metadata = {
   title: "Next Tailwind Template",

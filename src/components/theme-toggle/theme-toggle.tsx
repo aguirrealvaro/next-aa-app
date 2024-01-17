@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { cn } from "@/utils/cn";
+import { cn } from "@/lib/cn";
 
 export const ThemeToggle = () => {
   const { resolvedTheme, setTheme } = useTheme();
