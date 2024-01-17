@@ -1,3 +1,13 @@
 # Next Tailwind Template
 
-Template of a react production-ready application Typescript, Prettier, ESlint, Pre-commit, Tailwind and Dark Mode
+Custom next template including:
+
+- App router
+- Typescript
+- Prettier
+- ESlint
+- Pre-commit checking linter and types on staged files
+- Tailwind
+- Light and dark mode with css variables
+- Error Boundary
+- Knip to find deadcode
