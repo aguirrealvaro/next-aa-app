@@ -31,7 +31,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       >
         <ErrorBoundary>
           <ThemeProvider>
-            <div className="flex min-h-screen flex-col">
+            <div className="flex h-dvh flex-col">
               <header>Header</header>
               <main className="flex-1">{children}</main>
               <footer>Footer</footer>
