@@ -24,10 +24,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn(
-          "bg-bg-primary text-text-primary antialiased",
-          `${inter.variable} font-body`
-        )}
+        className={cn("bg-bg-primary text-text-primary antialiased", `${inter.className}`)}
       >
         <ErrorBoundary>
           <ThemeProvider>
