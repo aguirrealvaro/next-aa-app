@@ -11,3 +11,7 @@ Custom next template including:
 - Light and dark mode with css variables
 - Error Boundary
 - Knip to find deadcode
+
+### To Do:
+
+- transparent css tokens
