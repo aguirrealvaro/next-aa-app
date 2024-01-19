@@ -17,18 +17,25 @@ const config: Config = {
     },
     extend: {
       colors: {
-        "bg-primary": "var(--bg-primary)",
-        "bg-secondary": "var(--bg-secondary)",
-
-        "border-primary": "var(--border-primary)",
-        "hover-primary": "var(--hover-primary)",
-
-        "text-heading": "var(--text-heading)",
-        "text-primary": "var(--text-primary)",
-        "text-secondary": "var(--text-secondary)",
-
-        "disabled-primary": "var(--disabled-primary)",
-        "disabled-secondary": "var(--disabled-secondary)",
+        bg: {
+          primary: "var(--bg-primary)",
+          secondary: "var(--bg-secondary)",
+        },
+        border: {
+          primary: "var(--border-primary)",
+        },
+        hover: {
+          primary: "var(--hover-primary)",
+        },
+        text: {
+          heading: "var(--text-heading)",
+          primary: "var(--text-primary)",
+          secondary: "var(--text-secondary)",
+        },
+        disabled: {
+          primary: "var(--disabled-primary)",
+          secondary: "var(--disabled-secondary)",
+        },
       },
       fontFamily: {
         heading: "var(--font-inter)",
