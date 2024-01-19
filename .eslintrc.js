@@ -45,11 +45,10 @@ module.exports = {
       },
     ],
     "tailwindcss/classnames-order": "warn",
-    "tailwindcss/no-custom-classname": [
-      "warn",
-      {
-        callees: ["cn"],
-      },
-    ],
+  },
+  settings: {
+    tailwindcss: {
+      callees: ["cn", "cva"],
+    },
   },
 };
