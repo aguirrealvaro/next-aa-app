@@ -1,8 +1,9 @@
 import "@/styles/globals.css";
 import type { ReactNode } from "react";
+import { Github } from "lucide-react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ErrorBoundary } from "@/components";
+import { ErrorBoundary, ThemeToggle } from "@/components";
 import { cn } from "@/lib/cn";
 import { ThemeProvider } from "@/providers";
 
@@ -33,8 +34,18 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       >
         <ErrorBoundary>
           <ThemeProvider>
-            <header className="flex justify-center py-8">
+            <header className="flex items-center justify-center gap-4 py-8">
               <h1 className="text-2xl font-semibold">next-aa-app</h1>
+              <div className="flex items-center gap-2">
+                <ThemeToggle />
+                <a
+                  href="https://github.com/aguirrealvaro/next-aa-app"
+                  target="_blank"
+                  className="rounded p-2 transition hover:bg-hover-primary"
+                >
+                  <Github size={20} />
+                </a>
+              </div>
             </header>
             <main className="flex-1">{children}</main>
             <footer>Footer</footer>

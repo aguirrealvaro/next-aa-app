@@ -1,5 +1,25 @@
-import { ThemeToggle, Wrapper } from "@/components";
+import { Wrapper } from "@/components";
 import { cn } from "@/lib/cn";
+
+const features = [
+  { name: "NextJS", description: "React framework to render components on the server" },
+  {
+    name: "App Router",
+    description: "New paradigm for building applications using React's latest features",
+  },
+  { name: "Typescript", description: "description" },
+  {
+    name: "TailwindCSS",
+    description: "A utility-first CSS framework for rapid UI development.",
+  },
+  { name: "Prettier & ESLint", description: "For clean, consistent, and error-free code." },
+  { name: "Pre commit", description: "Checking linter and types on staged files" },
+  { name: "Dark mode", description: "description" },
+  { name: "Error Boundary", description: "To catching rendering errors" },
+  { name: "Knip", description: "Find deadcode" },
+  { name: "ts-reset", description: "Extremely strict TypeScript" },
+  { name: "lucide-icons", description: "Beautiful and Consistent icons" },
+];
 
 export default function Home() {
   return (
@@ -18,22 +38,19 @@ export default function Home() {
             </pre>
           </div>
           <div className="flex flex-col gap-8">
-            <p className="text-center">NextJS boilerplate with the following features</p>
+            <p className="text-center">NextJS boilerplate with the following features:</p>
             <div className="grid grid-cols-3 gap-4 text-center">
-              <div>App Router</div>
-              <div>Typescript</div>
-              <div>TailwindCSS</div>
-              <div>Prettier</div>
-              <div>ESLint</div>
-              <div>Pre commit</div>
-              <div>App Router</div>
-              <div className="flex items-center justify-center gap-2">
-                Light and Dark mode <ThemeToggle />
-              </div>
-              <div>Error Boundary</div>
-              <div>Knip</div>
-              <div>ts-reset</div>
-              <div>lucide icons</div>
+              {features.map(({ name, description }) => {
+                return (
+                  <div
+                    key={name}
+                    className="flex flex-col gap-4 rounded border bg-bg-secondary p-4 shadow"
+                  >
+                    <h2 className="font-semibold">{name}</h2>
+                    <p>{description}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
