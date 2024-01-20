@@ -1,5 +1,7 @@
 # next-aa-app
 
+[https://github.com/aguirrealvaro/next-aa-app](https://github.com/aguirrealvaro/next-aa-app)
+
 NextJS boilerplate with the following features:
 
 - App Router
@@ -13,8 +15,3 @@ NextJS boilerplate with the following features:
 - knip to find deadcode
 - ts-reset
 - lucide-react icons
-
-### To Do:
-
-- landing page: copy, footer
-- tests

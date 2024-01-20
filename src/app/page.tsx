@@ -1,4 +1,4 @@
-import { Wrapper } from "@/components";
+import { CopyButton, Wrapper } from "@/components";
 import { cn } from "@/lib/cn";
 
 const features = [
@@ -26,32 +26,31 @@ export default function Home() {
     <div>
       <Wrapper>
         <div>
-          <div className="mb-8 flex justify-center">
-            <pre
-              className={cn(
-                "whitespace-normal rounded-lg border p-4",
-                "bg-neutral-950  text-neutral-50",
-                "dark:bg-neutral-50 dark:text-neutral-950"
-              )}
-            >
-              <code>npx create-aa-app -e https://github.com/aguirrealvaro/next-aa-app</code>
+          <div
+            className={cn(
+              "flex items-center justify-between gap-4 rounded-lg border p-4",
+              "bg-neutral-950  text-neutral-50",
+              "dark:bg-neutral-50 dark:text-neutral-950",
+              "mb-12"
+            )}
+          >
+            <pre className="whitespace-normal">
+              <code>npx create-next-app -e https://github.com/aguirrealvaro/next-aa-app</code>
             </pre>
+            <CopyButton />
           </div>
-          <div className="flex flex-col gap-8">
-            <p className="text-center">NextJS boilerplate with the following features:</p>
-            <div className="grid grid-cols-3 gap-4 text-center">
-              {features.map(({ name, description }) => {
-                return (
-                  <div
-                    key={name}
-                    className="flex flex-col gap-4 rounded border bg-bg-secondary p-4 shadow"
-                  >
-                    <h2 className="font-semibold">{name}</h2>
-                    <p>{description}</p>
-                  </div>
-                );
-              })}
-            </div>
+          <div className="grid grid-cols-3 gap-4 text-center">
+            {features.map(({ name, description }) => {
+              return (
+                <div
+                  key={name}
+                  className="flex flex-col gap-4 rounded border bg-bg-secondary p-4 shadow"
+                >
+                  <h2 className="font-semibold">{name}</h2>
+                  <p>{description}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </Wrapper>

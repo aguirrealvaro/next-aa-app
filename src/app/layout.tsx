@@ -48,7 +48,18 @@ const RootLayout = ({ children }: RootLayoutProps) => {
               </div>
             </header>
             <main className="flex-1">{children}</main>
-            <footer>Footer</footer>
+            <footer className="flex items-center justify-center py-4 text-center text-sm text-text-secondary">
+              <span>
+                Made by{" "}
+                <a
+                  href="https://www.aguirrealvaro.dev/"
+                  target="_blank"
+                  className="hover:underline"
+                >
+                  aguirrealvaro
+                </a>
+              </span>
+            </footer>
           </ThemeProvider>
         </ErrorBoundary>
       </body>
