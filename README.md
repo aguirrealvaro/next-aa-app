@@ -10,8 +10,9 @@ NextJS boilerplate with the following features:
 - Pre-commit checking linter and types on staged files
 - Light and Dark mode with CSS variables
 - Error Boundary
-- Knip to find deadcode
+- knip to find deadcode
 - ts-reset
+- lucide-react icons
 
 ### To Do:
 

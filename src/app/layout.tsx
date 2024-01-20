@@ -7,8 +7,9 @@ import { cn } from "@/lib/cn";
 import { ThemeProvider } from "@/providers";
 
 export const metadata: Metadata = {
-  title: "Next Tailwind Template",
-  description: "Description",
+  title: "next-aa-app",
+  description:
+    "NextJS boilerplate with Tailwind, Typescript, Dark Mode, ESLint, Prettier, Precommit and more...",
 };
 
 type RootLayoutProps = {
@@ -24,15 +25,19 @@ const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={cn("bg-bg-primary text-text-primary antialiased", `${inter.className}`)}
+        className={cn(
+          "bg-bg-primary text-text-primary antialiased",
+          "flex h-dvh flex-col",
+          `${inter.className}`
+        )}
       >
         <ErrorBoundary>
           <ThemeProvider>
-            <div className="flex h-dvh flex-col">
-              <header>Header</header>
-              <main className="flex-1">{children}</main>
-              <footer>Footer</footer>
-            </div>
+            <header className="flex justify-center py-8">
+              <h1 className="text-2xl font-semibold">next-aa-app</h1>
+            </header>
+            <main className="flex-1">{children}</main>
+            <footer>Footer</footer>
           </ThemeProvider>
         </ErrorBoundary>
       </body>
