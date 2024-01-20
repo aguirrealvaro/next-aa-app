@@ -47,7 +47,7 @@ export default function Home() {
               return (
                 <div
                   key={name}
-                  className="flex flex-col gap-4 rounded border bg-bg-secondary p-4 shadow"
+                  className="flex flex-col gap-4 rounded-lg bg-bg-secondary p-4 shadow"
                 >
                   <h2 className="font-semibold">{name}</h2>
                   <p>{description}</p>
