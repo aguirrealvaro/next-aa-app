@@ -13,7 +13,10 @@ const features = [
     description: "A utility-first CSS framework for rapid UI development.",
   },
   { name: "Prettier & ESLint", description: "For clean, consistent, and error-free code" },
-  { name: "Pre commit", description: "Checking linter and types on staged files" },
+  {
+    name: "Pre commit",
+    description: "Checking linter and types on staged files after commits",
+  },
   { name: "Dark mode", description: "Support for light and dark mode" },
   { name: "Error Boundary", description: "To catching rendering errors" },
   { name: "Knip", description: "Find deadcode" },
