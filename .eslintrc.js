@@ -15,6 +15,7 @@ module.exports = {
     "@typescript-eslint/consistent-type-imports": "warn",
     "react-hooks/rules-of-hooks": "warn",
     "react-hooks/exhaustive-deps": "error",
+    "react/jsx-curly-brace-presence": ["warn"],
     "prettier/prettier": "error",
     "prefer-const": "warn",
     "prefer-arrow-callback": "warn",
