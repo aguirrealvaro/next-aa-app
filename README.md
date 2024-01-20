@@ -8,12 +8,12 @@ NextJS boilerplate with the following features:
 - Prettier
 - ESlint
 - Pre-commit checking linter and types on staged files
-- Light and dark mode with CSS variables
+- Light and Dark mode with CSS variables
 - Error Boundary
 - Knip to find deadcode
+- ts-reset
 
 ### To Do:
 
-- ts-reset
 - landing page
 - tests
