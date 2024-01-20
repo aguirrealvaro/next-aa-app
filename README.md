@@ -1,17 +1,19 @@
-# Next Tailwind Template
+# next-aa-app
 
-Custom next template including:
+NextJS boilerplate with the following features:
 
-- App router
+- App Router
 - Typescript
+- TailwindCSS
 - Prettier
 - ESlint
 - Pre-commit checking linter and types on staged files
-- Tailwind
-- Light and dark mode with css variables
+- Light and dark mode with CSS variables
 - Error Boundary
 - Knip to find deadcode
 
 ### To Do:
 
-- transparent css tokens
+- ts-reset
+- landing page
+- tests

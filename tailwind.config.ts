@@ -38,7 +38,6 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: "var(--font-inter)",
         body: "var(--font-inter)",
       },
     },
