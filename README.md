@@ -16,5 +16,5 @@ NextJS boilerplate with the following features:
 
 ### To Do:
 
-- landing page: descriptions, copy, footer
+- landing page: copy, footer
 - tests
