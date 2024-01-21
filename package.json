@@ -10,7 +10,7 @@
     "dev": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write .",
+    "format": "prettier --write ./**/*.{js,jsx,ts,tsx}",
     "lint": "next lint",
     "lint-fix": "next lint --fix",
     "check-types": "tsc --noEmit",
