@@ -39,7 +39,7 @@ const features: Feature[] = [
   },
   {
     name: "Error Boundary",
-    description: "To catching rendering errors",
+    description: "To catch rendering errors",
     url: "https://www.npmjs.com/package/react-error-boundary",
   },
   { name: "Knip", description: "Find deadcode", url: "https://github.com/webpro/knip" },
