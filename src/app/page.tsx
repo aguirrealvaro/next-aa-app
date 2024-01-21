@@ -40,9 +40,7 @@ export default function Home() {
             <pre>
               <code>npx create-next-app -e https://github.com/aguirrealvaro/next-aa-app</code>
             </pre>
-            <div className="absolute right-4">
-              <CopyButton />
-            </div>
+            <CopyButton />
           </div>
           <div className="grid grid-cols-3 gap-4 text-center md:grid-cols-2 xs:grid-cols-1">
             {features.map(({ name, description }) => {
