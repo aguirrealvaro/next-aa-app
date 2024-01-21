@@ -10,8 +10,11 @@ const CopyButton = () => {
   };
 
   return (
-    <button onClick={copyCommand}>
-      <Copy size={20} />
+    <button
+      onClick={copyCommand}
+      className="rounded bg-neutral-950 p-2 transition hover:bg-neutral-800 dark:bg-neutral-50 dark:hover:bg-neutral-200"
+    >
+      <Copy size={18} />
     </button>
   );
 };

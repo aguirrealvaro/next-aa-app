@@ -1,6 +1,6 @@
 # next-aa-app
 
-[https://github.com/aguirrealvaro/next-aa-app](https://github.com/aguirrealvaro/next-aa-app)
+[https://template.aguirrealvaro.dev/](https://template.aguirrealvaro.dev/)
 
 NextJS boilerplate with the following features:
 

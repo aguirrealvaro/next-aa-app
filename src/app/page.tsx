@@ -31,18 +31,20 @@ export default function Home() {
         <div>
           <div
             className={cn(
-              "flex items-center justify-between gap-4 rounded-lg border p-4",
+              "flex items-center justify-center gap-4 rounded-lg border p-4",
               "bg-neutral-950  text-neutral-50",
               "dark:bg-neutral-50 dark:text-neutral-950",
-              "mb-12"
+              "relative mb-12 overflow-auto"
             )}
           >
-            <pre className="whitespace-normal">
+            <pre>
               <code>npx create-next-app -e https://github.com/aguirrealvaro/next-aa-app</code>
             </pre>
-            <CopyButton />
+            <div className="absolute right-4">
+              <CopyButton />
+            </div>
           </div>
-          <div className="grid grid-cols-3 gap-4 text-center">
+          <div className="grid grid-cols-3 gap-4 text-center md:grid-cols-2 xs:grid-cols-1">
             {features.map(({ name, description }) => {
               return (
                 <div
