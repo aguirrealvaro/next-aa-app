@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import type { ReactNode } from "react";
 import { Github } from "lucide-react";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { inter } from "@/app/fonts";
 import { ErrorBoundary, ThemeToggle } from "@/components";
 import { cn } from "@/lib/cn";
 import { ThemeProvider } from "@/providers";
@@ -17,11 +17,6 @@ type RootLayoutProps = {
   children: ReactNode;
 };
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
-
 const RootLayout = ({ children }: RootLayoutProps) => {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -29,7 +24,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         className={cn(
           "bg-bg-primary text-text-primary antialiased",
           "flex h-dvh flex-col",
-          `${inter.className}`
+          `${inter.variable} font-body`
         )}
       >
         <ErrorBoundary>
