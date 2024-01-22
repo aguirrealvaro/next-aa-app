@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import type { ReactNode } from "react";
 import { Github } from "lucide-react";
 import type { Metadata } from "next";
-import { inter } from "@/app/fonts";
+import { inter } from "./fonts";
 import { ErrorBoundary, ThemeToggle } from "@/components";
 import { cn } from "@/lib/cn";
 import { ThemeProvider } from "@/providers";
