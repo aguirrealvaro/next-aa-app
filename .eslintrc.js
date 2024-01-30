@@ -12,7 +12,12 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "error",
     "@typescript-eslint/no-non-null-assertion": "warn",
     "@typescript-eslint/no-explicit-any": "warn",
-    "@typescript-eslint/consistent-type-imports": "warn",
+    "@typescript-eslint/consistent-type-imports": [
+      "warn",
+      {
+        fixStyle: "inline-type-imports",
+      },
+    ],
     "react-hooks/rules-of-hooks": "warn",
     "react-hooks/exhaustive-deps": "error",
     "react/jsx-curly-brace-presence": ["warn"],
