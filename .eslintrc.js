@@ -50,7 +50,6 @@ module.exports = {
         },
       },
     ],
-    "tailwindcss/classnames-order": "warn",
   },
   settings: {
     tailwindcss: {
