@@ -38,6 +38,6 @@
   *,
   ::before,
   ::after {
-    @apply border-border-primary;
+    @apply border-border-primary min-w-0;
   }
 }
