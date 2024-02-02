@@ -4,7 +4,7 @@ module.exports = {
     "plugin:prettier/recommended",
     "plugin:tailwindcss/recommended",
   ],
-  plugins: ["@typescript-eslint", "tailwindcss"],
+  plugins: ["@typescript-eslint", "tailwindcss", "no-type-assertion"],
   rules: {
     "no-var": "error",
     "no-console": "warn",
@@ -26,6 +26,7 @@ module.exports = {
     "prefer-arrow-callback": "warn",
     "import/no-duplicates": "error",
     "import/no-unresolved": "off",
+    "no-type-assertion/no-type-assertion": "warn",
     "import/order": [
       "error",
       {
