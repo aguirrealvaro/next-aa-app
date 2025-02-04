@@ -2,7 +2,7 @@
 
 [https://template.aguirrealvaro.dev/](https://template.aguirrealvaro.dev/)
 
-NextJS boilerplate with the following features:
+Next boilerplate with the following features:
 
 - App Router
 - Typescript
