@@ -6,4 +6,5 @@ module.exports = {
   printWidth: 95,
   arrowParens: "always",
   endOfLine: "lf",
+  plugins: ["prettier-plugin-tailwindcss"],
 };
