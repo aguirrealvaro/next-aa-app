@@ -1,6 +1,7 @@
 {
-  "files.eol": "\n",
+  "css.validate": false,
   "typescript.tsdk": "node_modules\\typescript\\lib",
+  "files.eol": "\n",
   "files.associations": {
     "*.css": "tailwindcss"
   }

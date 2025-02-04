@@ -63,7 +63,7 @@ export default function Home() {
           <div
             className={cn(
               "flex items-center justify-center gap-4 rounded-lg border p-4",
-              "bg-neutral-950  text-neutral-50",
+              "bg-neutral-950 text-neutral-50",
               "dark:bg-neutral-50 dark:text-neutral-950",
               "relative mb-12 overflow-auto"
             )}
